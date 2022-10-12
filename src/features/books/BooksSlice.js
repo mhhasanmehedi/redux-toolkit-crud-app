@@ -5,13 +5,18 @@ const initialBooks = {
   books: [
     {
       id: uuidv4(),
-      title: "Love Bangladesh",
-      author: "Anisul Islam",
+      title: "The India Story",
+      author: "Bimal Jalal",
     },
     {
       id: uuidv4(),
-      title: "Bangladeshi",
-      author: "Mehedi Hasan",
+      title: "A Place Called Home",
+      author: "Preeti Shenoy",
+    },
+    {
+      id: uuidv4(),
+      title: "Lal Salam",
+      author: "Smriti Irani",
     },
   ],
 };
