@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addBook } from "./BooksSlice";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
@@ -24,7 +24,11 @@ const AddBook = () => {
       >
         Add Book
       </h2>
-      <form onSubmit={handleSubmit} className="border rounded p-4 w-50 m-auto">
+      <form
+        onSubmit={handleSubmit}
+        className="border rounded p-4"
+        style={{ maxWidth: "600px", margin: "auto" }}
+      >
         <div className="mb-3">
           <label htmlFor="title" className="form-label">
             Title:

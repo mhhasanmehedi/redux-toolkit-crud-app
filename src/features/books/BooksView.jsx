@@ -20,7 +20,10 @@ const BooksView = () => {
       >
         List of books
       </h2>
-      <table className="table mb-5">
+      <table
+        className="table mb-5"
+        style={{ maxWidth: "600px", margin: "auto" }}
+      >
         <thead>
           <tr style={{ background: "#006877", color: "white" }}>
             <th>ID</th>

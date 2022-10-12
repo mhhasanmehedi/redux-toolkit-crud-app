@@ -7,7 +7,7 @@ const EditBook = () => {
   const location = useLocation();
   const dispatch = useDispatch();
   console.log(location.state);
-  const [id, setId] = useState(location.state.id);
+  const [id] = useState(location.state.id);
   const [title, setTitle] = useState(location.state.title);
   const [author, setAuthor] = useState(location.state.author);
   const navigate = useNavigate();
@@ -25,7 +25,11 @@ const EditBook = () => {
       >
         Edit Book
       </h2>
-      <form onSubmit={handleSubmit} className="border rounded p-4 w-50 m-auto">
+      <form
+        onSubmit={handleSubmit}
+        className="border rounded p-4 "
+        style={{ maxWidth: "600px", margin: "auto" }}
+      >
         <div className="mb-3">
           <label htmlFor="title" className="form-label">
             Title:
